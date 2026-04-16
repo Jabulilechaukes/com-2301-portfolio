@@ -1,0 +1,73 @@
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #00adb5, #222831);
+    color: white;
+}
+
+/* Hero text */
+.hero-text h1 {
+    font-size: 42px;
+}
+
+.typing {
+    font-size: 20px;
+    color: #eeeeee;
+    border-right: 2px solid white;
+    padding-right: 5px;
+}
+
+/* Image styling */
+.profile-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Button upgrade */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: #00adb5;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00adb5;
+    color: white;
+}
+
+/* Mobile */
+@media(max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .profile-img {
+        margin-top: 20px;
+    }
+}
+
